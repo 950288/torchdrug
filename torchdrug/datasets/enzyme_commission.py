@@ -134,6 +134,7 @@ class EnzymeCommission(data.ProteinDataset):
         return item
 
 @R.register("datasets.EnzymeCommissionV2")
+@utils.copy_args(data.ProteinDataset.load_pdbs)
 class EnzymeCommissionV2(EnzymeCommission):
     """
     A set of proteins with their 3D structures and EC numbers, which describes their
