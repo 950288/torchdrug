@@ -60,5 +60,5 @@ __all__ = [
     "BinaryLocalization", "SubcellularLocalization", "SecondaryStructure",
     "HumanPPI", "YeastPPI", "PPIAffinity", "BindingDB", "PDBBind", "ProteinNet",
     "FB15k", "FB15k237", "WN18", "WN18RR", "Hetionet",
-    "Cora", "CiteSeer", "PubMed",
+    "Cora", "CiteSeer", "PubMed","EnzymeCommissionV2"
 ]
