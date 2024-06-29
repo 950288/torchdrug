@@ -53,7 +53,7 @@ instructions in https://github.com/rusty1s/pytorch_scatter
 ### From Source ###
 
 ```bash
-git clone https://github.com/DeepGraphLearning/torchdrug
+git clone https://github.com/950288/torchdrug
 cd torchdrug
 pip install -r requirements.txt
 python setup.py install
