@@ -28,9 +28,8 @@ class EnzymeCommission(data.ProteinDataset):
         **kwargs
     """
 
-    url = "https://zenodo.org/record/6622158/files/EnzymeCommission.zip"
-    md5 = "33f799065f8ad75f87b709a87293bc65"
-    processed_file = "enzyme_commission.pkl.gz"
+    url = "https://zenodo.org/api/records/12588839/draft/files-archive"
+    # md5 = "33f799065f8ad75f87b709a87293bc65"
     test_cutoffs = [0.3, 0.4, 0.5, 0.7, 0.95]
 
     def __init__(self, path, test_cutoff=0.95, verbose=1, **kwargs):
@@ -42,7 +41,8 @@ class EnzymeCommission(data.ProteinDataset):
             raise ValueError("Unknown test cutoff `%.2f` for EnzymeCommission dataset" % test_cutoff)
         self.test_cutoff = test_cutoff
 
-        zip_file = utils.download(self.url, path, md5=self.md5)
+        # zip_file = utils.download(self.url, path, md5=self.md5)
+        zip_file = utils.download(self.url, path)
         path = os.path.join(utils.extract(zip_file), "EnzymeCommission")
         pkl_file = os.path.join(path, self.processed_file)
 
