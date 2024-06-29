@@ -8,7 +8,7 @@ from torch.utils import data as torch_data
 from torchdrug import data, utils
 from torchdrug.core import Registry as R
 
-@R.register("datasets.EnzymeCommission")
+@R.register("datasets.EnzymeCommissionV2")
 @utils.copy_args(data.ProteinDataset.load_pdbs)
 class EnzymeCommission(data.ProteinDataset):
     url = "https://zenodo.org/records/12589405/files/enzyme_commission%20.zip"
