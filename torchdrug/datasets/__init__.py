@@ -38,7 +38,7 @@ from .pdbbind import PDBBind
 from .proteinnet import ProteinNet
 
 from .enzyme_commission import EnzymeCommission
-from .enzyme_commission_v2 import EnzymeCommissionV2
+from .enzyme_commissionV2 import EnzymeCommissionV2
 from .gene_ontology import GeneOntology
 from .alphafolddb import AlphaFoldDB
 
