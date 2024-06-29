@@ -30,6 +30,7 @@ class EnzymeCommission(data.ProteinDataset):
 
     url = "https://zenodo.org/records/12589405/files/enzyme_commission%20.zip"
     md5 = "368d4b587e78d44546d5f3633727e318"
+    processed_file = "enzyme_commission.pkl.gz"
     test_cutoffs = [0.3, 0.4, 0.5, 0.7, 0.95]
 
     def __init__(self, path, test_cutoff=0.95, verbose=1, **kwargs):
